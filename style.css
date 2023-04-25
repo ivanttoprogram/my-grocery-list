@@ -11,11 +11,17 @@
     --purplish: 	#c792ea;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-title {
+.title {
     margin: 0.5em;
     font-size: 4em;
     font-weight: lighter;
@@ -23,11 +29,11 @@ title {
     color: var(--accent);
 }
 
-.newGroceryForm{
+.newGroceryForm {
     display: flex;
 }
 
-newGrocery{
+#newGrocery {
  background-color: white;
  color: var(--comment);
  padding: 0.5em;
@@ -35,7 +41,7 @@ newGrocery{
  font-size: 1.5em;
 }
 
-addBTN{
+#addBtn {
     background-color: var(--bluish);
     color: var(--purplish); 
     padding: 0.5em;
@@ -46,23 +52,23 @@ addBTN{
     border-radius: 0 0.25em 0.25em 0; 
 }
 
-addBtn:hover{
+#addBtn:hover {
  background-color: var(--greenish);
 }
 
-groceryList{
+#groceryList {
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: center; 
  margin-top: 2em; 
  border-radius: 0.5em; 
- background-color: var(--redish);
+ background-color: var(--background);
 }
 
-groceryItem {
+.groceryItem {
     background-color: white;
-    color: var(--backgrounds);
+    color: var(--redish);
     margin: 0.5em;
     width: 24em;
     padding: 0.5em;
@@ -70,7 +76,7 @@ groceryItem {
     text-align: center;
 }
 
-groceryItem:hover{
+.groceryItem:hover {
     background-color: var(--accent);
     font-weight: bold;
 }
